@@ -2,12 +2,9 @@
 package Antlr;
 import org.antlr.v4.runtime.Lexer;
 import org.antlr.v4.runtime.CharStream;
-import org.antlr.v4.runtime.Token;
-import org.antlr.v4.runtime.TokenStream;
 import org.antlr.v4.runtime.*;
 import org.antlr.v4.runtime.atn.*;
 import org.antlr.v4.runtime.dfa.DFA;
-import org.antlr.v4.runtime.misc.*;
 
 @SuppressWarnings({"all", "warnings", "unchecked", "unused", "cast"})
 public class InterpreterLexer extends Lexer {
@@ -17,7 +14,9 @@ public class InterpreterLexer extends Lexer {
 	protected static final PredictionContextCache _sharedContextCache =
 		new PredictionContextCache();
 	public static final int
-		PLUS=1, MINUS=2, INT=3;
+		DIGIT=1, LOWERCASE=2, UPPERCASE=3, PLUS=4, MINUS=5, MULTIPLY=6, DIVIDE=7, 
+		POWER=8, OBRACKET=9, CBRACKET=10, SIN=11, COS=12, TAN=13, COT=14, SEC=15, 
+		CSC=16;
 	public static String[] channelNames = {
 		"DEFAULT_TOKEN_CHANNEL", "HIDDEN"
 	};
@@ -28,20 +27,24 @@ public class InterpreterLexer extends Lexer {
 
 	private static String[] makeRuleNames() {
 		return new String[] {
-			"PLUS", "MINUS", "INT"
+			"DIGIT", "LOWERCASE", "UPPERCASE", "PLUS", "MINUS", "MULTIPLY", "DIVIDE", 
+			"POWER", "OBRACKET", "CBRACKET", "SIN", "COS", "TAN", "COT", "SEC", "CSC"
 		};
 	}
 	public static final String[] ruleNames = makeRuleNames();
 
 	private static String[] makeLiteralNames() {
 		return new String[] {
-			null, "'+'", "'-'"
+			null, null, null, null, "'+'", "'-'", "'*'", "'/'", "'^'", "'('", "')'", 
+			"'sin'", "'cos'", "'tan'", "'cot'", "'sec'", "'csc'"
 		};
 	}
 	private static final String[] _LITERAL_NAMES = makeLiteralNames();
 	private static String[] makeSymbolicNames() {
 		return new String[] {
-			null, "PLUS", "MINUS", "INT"
+			null, "DIGIT", "LOWERCASE", "UPPERCASE", "PLUS", "MINUS", "MULTIPLY", 
+			"DIVIDE", "POWER", "OBRACKET", "CBRACKET", "SIN", "COS", "TAN", "COT", 
+			"SEC", "CSC"
 		};
 	}
 	private static final String[] _SYMBOLIC_NAMES = makeSymbolicNames();
@@ -85,7 +88,7 @@ public class InterpreterLexer extends Lexer {
 	}
 
 	@Override
-	public String getGrammarFileName() { return "Interpreter.g4"; }
+	public String getGrammarFileName() { return "UserInterface/Interpreter.g4"; }
 
 	@Override
 	public String[] getRuleNames() { return ruleNames; }
@@ -103,12 +106,26 @@ public class InterpreterLexer extends Lexer {
 	public ATN getATN() { return _ATN; }
 
 	public static final String _serializedATN =
-		"\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\2\5\22\b\1\4\2\t\2"+
-		"\4\3\t\3\4\4\t\4\3\2\3\2\3\3\3\3\3\4\6\4\17\n\4\r\4\16\4\20\2\2\5\3\3"+
-		"\5\4\7\5\3\2\2\2\22\2\3\3\2\2\2\2\5\3\2\2\2\2\7\3\2\2\2\3\t\3\2\2\2\5"+
-		"\13\3\2\2\2\7\16\3\2\2\2\t\n\7-\2\2\n\4\3\2\2\2\13\f\7/\2\2\f\6\3\2\2"+
-		"\2\r\17\4\62;\2\16\r\3\2\2\2\17\20\3\2\2\2\20\16\3\2\2\2\20\21\3\2\2\2"+
-		"\21\b\3\2\2\2\4\2\20\2";
+		"\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\2\22O\b\1\4\2\t\2\4"+
+		"\3\t\3\4\4\t\4\4\5\t\5\4\6\t\6\4\7\t\7\4\b\t\b\4\t\t\t\4\n\t\n\4\13\t"+
+		"\13\4\f\t\f\4\r\t\r\4\16\t\16\4\17\t\17\4\20\t\20\4\21\t\21\3\2\3\2\3"+
+		"\3\3\3\3\4\3\4\3\5\3\5\3\6\3\6\3\7\3\7\3\b\3\b\3\t\3\t\3\n\3\n\3\13\3"+
+		"\13\3\f\3\f\3\f\3\f\3\r\3\r\3\r\3\r\3\16\3\16\3\16\3\16\3\17\3\17\3\17"+
+		"\3\17\3\20\3\20\3\20\3\20\3\21\3\21\3\21\3\21\2\2\22\3\3\5\4\7\5\t\6\13"+
+		"\7\r\b\17\t\21\n\23\13\25\f\27\r\31\16\33\17\35\20\37\21!\22\3\2\2\2N"+
+		"\2\3\3\2\2\2\2\5\3\2\2\2\2\7\3\2\2\2\2\t\3\2\2\2\2\13\3\2\2\2\2\r\3\2"+
+		"\2\2\2\17\3\2\2\2\2\21\3\2\2\2\2\23\3\2\2\2\2\25\3\2\2\2\2\27\3\2\2\2"+
+		"\2\31\3\2\2\2\2\33\3\2\2\2\2\35\3\2\2\2\2\37\3\2\2\2\2!\3\2\2\2\3#\3\2"+
+		"\2\2\5%\3\2\2\2\7\'\3\2\2\2\t)\3\2\2\2\13+\3\2\2\2\r-\3\2\2\2\17/\3\2"+
+		"\2\2\21\61\3\2\2\2\23\63\3\2\2\2\25\65\3\2\2\2\27\67\3\2\2\2\31;\3\2\2"+
+		"\2\33?\3\2\2\2\35C\3\2\2\2\37G\3\2\2\2!K\3\2\2\2#$\4\62;\2$\4\3\2\2\2"+
+		"%&\4c|\2&\6\3\2\2\2\'(\4C\\\2(\b\3\2\2\2)*\7-\2\2*\n\3\2\2\2+,\7/\2\2"+
+		",\f\3\2\2\2-.\7,\2\2.\16\3\2\2\2/\60\7\61\2\2\60\20\3\2\2\2\61\62\7`\2"+
+		"\2\62\22\3\2\2\2\63\64\7*\2\2\64\24\3\2\2\2\65\66\7+\2\2\66\26\3\2\2\2"+
+		"\678\7u\2\289\7k\2\29:\7p\2\2:\30\3\2\2\2;<\7e\2\2<=\7q\2\2=>\7u\2\2>"+
+		"\32\3\2\2\2?@\7v\2\2@A\7c\2\2AB\7p\2\2B\34\3\2\2\2CD\7e\2\2DE\7q\2\2E"+
+		"F\7v\2\2F\36\3\2\2\2GH\7u\2\2HI\7g\2\2IJ\7e\2\2J \3\2\2\2KL\7e\2\2LM\7"+
+		"u\2\2MN\7e\2\2N\"\3\2\2\2\3\2\2";
 	public static final ATN _ATN =
 		new ATNDeserializer().deserialize(_serializedATN.toCharArray());
 	static {

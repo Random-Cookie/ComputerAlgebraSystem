@@ -17,6 +17,42 @@ public interface InterpreterVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitStart(InterpreterParser.StartContext ctx);
 	/**
+	 * Visit a parse tree produced by {@link InterpreterParser#number}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitNumber(InterpreterParser.NumberContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link InterpreterParser#variable}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitVariable(InterpreterParser.VariableContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link InterpreterParser#identifier}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitIdentifier(InterpreterParser.IdentifierContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link InterpreterParser#factor}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitFactor(InterpreterParser.FactorContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link InterpreterParser#exponent}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitExponent(InterpreterParser.ExponentContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link InterpreterParser#term}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitTerm(InterpreterParser.TermContext ctx);
+	/**
 	 * Visit a parse tree produced by {@link InterpreterParser#expression}.
 	 * @param ctx the parse tree
 	 * @return the visitor result

@@ -1,24 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/src/UserInterface/Main.java" />
+    <bookmark url="file://$PROJECT_DIR$/src/UserInterface/Interpreter.g4" line="2" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="2fb4a832-2bcb-4f46-83b3-c5675918cd12" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/antlr-4.8-complete.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Antlr/Interpreter.interp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Antlr/Interpreter.tokens" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Antlr/InterpreterBaseListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Antlr/InterpreterBaseVisitor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Antlr/InterpreterLexer.interp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Antlr/InterpreterLexer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Antlr/InterpreterLexer.tokens" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Antlr/InterpreterListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Antlr/InterpreterParser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Antlr/InterpreterVisitor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Interpreter.g4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="2fb4a832-2bcb-4f46-83b3-c5675918cd12" name="Default Changelist" comment="Printing Expressions:&#10;-added visitor class to extract expressions from tree&#10;-added method to main to extract expressions using visitor&#10;-added tests for above&#10;-restructured packages">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Antlr/VisitorPrinter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Testing/PrintTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/UserInterface/Interpreter.g4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/UserInterface/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ComputerAlgebraSystem.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ComputerAlgebraSystem.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ComputerAlgebraSystem/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ComputerAlgebraSystem/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ComputerAlgebraSystem/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Antlr/Interpreter.interp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Antlr/Interpreter.interp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Antlr/Interpreter.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/src/Antlr/Interpreter.tokens" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Antlr/InterpreterBaseListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Antlr/InterpreterBaseListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Antlr/InterpreterBaseVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Antlr/InterpreterBaseVisitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Antlr/InterpreterLexer.interp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Antlr/InterpreterLexer.interp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Antlr/InterpreterLexer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Antlr/InterpreterLexer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Antlr/InterpreterLexer.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/src/Antlr/InterpreterLexer.tokens" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Antlr/InterpreterListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Antlr/InterpreterListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Antlr/InterpreterParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Antlr/InterpreterParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Antlr/InterpreterVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Antlr/InterpreterVisitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interpreter.g4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,20 +35,60 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="79" selection-start-line="8" selection-start-column="79" selection-end-line="8" selection-end-column="79" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/UserInterface/Main.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="340">
+                  <caret line="26" column="9" lean-forward="true" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                    <element signature="e#186#217#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/Testing/PrintTest.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="487">
+                  <caret line="56" column="31" selection-start-line="56" selection-start-column="31" selection-end-line="56" selection-end-column="31" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                    <element signature="e#498#529#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/Antlr/VisitorPrinter.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="275">
+                  <caret line="35" column="16" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="16" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/UserInterface/Interpreter.g4">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="48">
+                  <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -50,29 +97,53 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>public</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>private</replace>
+    </replaceStrings>
+  </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Joe Cook" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/grammar.g4" />
+        <option value="$PROJECT_DIR$/src/Antlr/InterpreterVisitorSim.java" />
+        <option value="$PROJECT_DIR$/src/Antlr/ListenerPrinter.java" />
         <option value="$PROJECT_DIR$/src/Interpreter.g4" />
         <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/System/Main.java" />
+        <option value="$PROJECT_DIR$/src/UserInterface/Main.java" />
+        <option value="$PROJECT_DIR$/src/UserInterface/Interpreter.g4" />
+        <option value="$PROJECT_DIR$/src/Testing/PrintTest.java" />
+        <option value="$PROJECT_DIR$/src/Antlr/VisitorPrinter.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-7" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -98,28 +169,40 @@
             </path>
             <path>
               <item name="ComputerAlgebraSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ComputerAlgebraSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Testing" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ComputerAlgebraSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ComputerAlgebraSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="UserInterface" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ComputerAlgebraSystem" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1582542964435" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1585601811128" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/antlr-4.8-complete.jar!/" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Other File Types" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Joe\DevJava\ComputerAlgebraSystem\src\System" />
       <recent name="D:\Joe\DevJava\ComputerAlgebraSystem\src" />
       <recent name="D:\Joe\DevJava\ComputerAlgebraSystem\src\Antlr" />
     </key>
@@ -136,9 +219,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.PrintTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
+      <option name="MAIN_CLASS_NAME" value="UserInterface.Main" />
       <module name="ComputerAlgebraSystem" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <RunnerSettings RunnerId="Run" />
@@ -147,8 +230,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PrintTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Testing.PrintTest" />
+      <module name="ComputerAlgebraSystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Testing.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.PrintTest" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -164,7 +261,13 @@
       <option name="presentableId" value="Default" />
       <updated>1582539847884</updated>
       <workItem from="1582539849838" duration="2278000" />
-      <workItem from="1582542458702" duration="506000" />
+      <workItem from="1582542458702" duration="5160000" />
+      <workItem from="1582555416969" duration="3927000" />
+      <workItem from="1583144687270" duration="1733000" />
+      <workItem from="1583326505455" duration="484000" />
+      <workItem from="1585314665056" duration="599000" />
+      <workItem from="1585400267859" duration="598000" />
+      <workItem from="1585569673416" duration="20912000" />
     </task>
     <task id="LOCAL-00001" summary="Git Integration Test">
       <created>1582540873082</created>
@@ -173,16 +276,24 @@
       <option name="project" value="LOCAL" />
       <updated>1582540873082</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Antlr Setup:&#10;-Grammar file added&#10;-Antlr dependency Added&#10;-Interpreter generated based on basic grammar">
+      <created>1582543131390</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1582543131390</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2784000" />
+    <option name="totallyTimeSpent" value="35691000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="974" height="1047" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2549234" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12739871" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -190,9 +301,9 @@
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32932165" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32827735" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.38353196" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -200,10 +311,10 @@
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Tool Output" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="11" />
+      <window_info active="true" anchor="bottom" id="Messages" order="11" visible="true" weight="0.32827735" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
       <window_info anchor="bottom" id="Version Control" order="13" />
-      <window_info anchor="bottom" id="ANTLR Preview" order="14" weight="0.32932165" />
+      <window_info anchor="bottom" id="ANTLR Preview" order="14" weight="0.39219934" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -220,31 +331,150 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Git Integration Test" />
-    <option name="LAST_COMMIT_MESSAGE" value="Git Integration Test" />
+    <MESSAGE value="Antlr Setup:&#10;-Grammar file added&#10;-Antlr dependency Added&#10;-Interpreter generated based on basic grammar" />
+    <MESSAGE value="Printing Expressions:&#10;-added visitor class to extract expressions from tree&#10;-added method to main to extract expressions using visitor&#10;-added tests for above&#10;-restructured packages" />
+    <option name="LAST_COMMIT_MESSAGE" value="Printing Expressions:&#10;-added visitor class to extract expressions from tree&#10;-added method to main to extract expressions using visitor&#10;-added tests for above&#10;-restructured packages" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/lib/antlr-4.8-complete.jar!/org/antlr/v4/runtime/tree/AbstractParseTreeVisitor.class</url>
+          <line>22</line>
+          <properties />
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/lib/antlr-4.8-complete.jar!/org/antlr/v4/runtime/tree/AbstractParseTreeVisitor.class</url>
+          <line>25</line>
+          <properties />
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Testing/PrintTest.java</url>
+          <line>76</line>
+          <properties />
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Interpreter.g4">
+    <entry file="file://$PROJECT_DIR$/src/Antlr/temp.java" />
+    <entry file="jar://$PROJECT_DIR$/lib/antlr-4.8-complete.jar!/org/antlr/v4/runtime/Recognizer.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="2" selection-start-line="2" selection-end-line="2" selection-end-column="5" />
+        <state relative-caret-position="226">
+          <caret line="68" column="33" selection-start-line="68" selection-start-column="33" selection-end-line="68" selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Antlr/temp.java" />
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
+    <entry file="jar://$PROJECT_DIR$/lib/antlr-4.8-complete.jar!/org/antlr/v4/runtime/CharStreams.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="79" selection-start-line="8" selection-start-column="79" selection-end-line="8" selection-end-column="79" />
+        <state relative-caret-position="294">
+          <caret line="33" column="91" selection-start-line="33" selection-start-column="91" selection-end-line="33" selection-end-column="91" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Antlr/InterpreterBaseListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Antlr/ListenerPrinter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="402">
+          <caret line="53" column="37" selection-start-line="53" selection-start-column="37" selection-end-line="53" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/antlr-4.8-complete.jar!/org/antlr/v4/runtime/tree/TerminalNodeImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#620#621#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/antlr-4.8-complete.jar!/org/antlr/v4/runtime/CommonToken.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="67" selection-start-line="67" selection-end-line="67" />
+          <folding>
+            <element signature="e#2183#2184#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/antlr-4.8-complete.jar!/org/antlr/v4/runtime/ParserRuleContext.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="54" column="125" selection-start-line="54" selection-start-column="125" selection-end-line="54" selection-end-column="125" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/antlr-4.8-complete.jar!/org/antlr/v4/runtime/tree/AbstractParseTreeVisitor.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Antlr/InterpreterBaseVisitor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="21" lean-forward="true" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Antlr/InterpreterParser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        <state relative-caret-position="169">
+          <caret line="589" selection-start-line="589" selection-end-line="589" />
+          <folding>
+            <element signature="e#16688#16689#0" expanded="true" />
+            <element signature="e#18744#18745#0" expanded="true" />
+            <element signature="e#18795#18796#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UserInterface/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="26" column="9" lean-forward="true" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#186#217#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UserInterface/Interpreter.g4">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Testing/PrintTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="487">
+          <caret line="56" column="31" selection-start-line="56" selection-start-column="31" selection-end-line="56" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#498#529#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Antlr/VisitorPrinter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="35" column="16" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -305,7 +535,6 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
