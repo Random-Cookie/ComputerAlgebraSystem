@@ -11,28 +11,19 @@ variable:
 	|	LOWERCASE
 	|	UPPERCASE;
 
-factor:
+expression:
 	|	variable
 	|	number
-	|	OBRACKET expression CBRACKET;
-
-exponent:
-	|	factor
-	|	exponent POWER OBRACKET expression CBRACKET
+	|	OBRACKET expression CBRACKET
 	|	SIN OBRACKET expression CBRACKET
 	|	COS OBRACKET expression CBRACKET
 	|	TAN OBRACKET expression CBRACKET
 	|	COT OBRACKET expression CBRACKET
 	|	SEC	OBRACKET expression CBRACKET
-	|	CSC	OBRACKET expression CBRACKET;
-
-term:
-	|	exponent
-	|	exponent (MULTIPLY | DIVIDE) term;
-
-expression:
-	|	term
-	|	term (PLUS | MINUS) expression;
+	|	CSC	OBRACKET expression CBRACKET
+	|	expression POWER OBRACKET expression CBRACKET
+	|	expression (MULTIPLY | DIVIDE) expression
+	|	expression (PLUS | MINUS) expression;
 
 
 DIGIT		:	'0'..'9';

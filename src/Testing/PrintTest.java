@@ -1,13 +1,10 @@
 package Testing;
 
-import Antlr.InterpreterLexer;
-import Antlr.InterpreterParser;
 import UserInterface.Main;
+import Antlr.*;
 import org.antlr.v4.runtime.CharStream;
 import org.antlr.v4.runtime.CharStreams;
 import org.antlr.v4.runtime.CommonTokenStream;
-
-import java.util.stream.StreamSupport;
 
 public class PrintTest {
 	private static final String ANSI_RESET = "\u001B[0m";

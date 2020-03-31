@@ -1,4 +1,4 @@
-// Generated from D:/Joe/DevJava/ComputerAlgebraSystem/src\Interpreter.g4 by ANTLR 4.8
+// Generated from D:/Joe/DevJava/ComputerAlgebraSystem/src/UserInterface\Interpreter.g4 by ANTLR 4.8
 package Antlr;
 import org.antlr.v4.runtime.tree.ParseTreeVisitor;
 
@@ -28,30 +28,6 @@ public interface InterpreterVisitor<T> extends ParseTreeVisitor<T> {
 	 * @return the visitor result
 	 */
 	T visitVariable(InterpreterParser.VariableContext ctx);
-	/**
-	 * Visit a parse tree produced by {@link InterpreterParser#identifier}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitIdentifier(InterpreterParser.IdentifierContext ctx);
-	/**
-	 * Visit a parse tree produced by {@link InterpreterParser#factor}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitFactor(InterpreterParser.FactorContext ctx);
-	/**
-	 * Visit a parse tree produced by {@link InterpreterParser#exponent}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitExponent(InterpreterParser.ExponentContext ctx);
-	/**
-	 * Visit a parse tree produced by {@link InterpreterParser#term}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitTerm(InterpreterParser.TermContext ctx);
 	/**
 	 * Visit a parse tree produced by {@link InterpreterParser#expression}.
 	 * @param ctx the parse tree

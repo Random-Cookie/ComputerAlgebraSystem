@@ -2,9 +2,6 @@ package Antlr;
 
 public class VisitorPrinter extends InterpreterBaseVisitor<String> {
 
-	//Builder for string
-	StringBuilder expression = new StringBuilder();
-
 	@Override
 	public String visitStart(InterpreterParser.StartContext ctx) {
 		return visit(ctx.expression());
@@ -15,78 +12,49 @@ public class VisitorPrinter extends InterpreterBaseVisitor<String> {
 		if (ctx.number() == null) {
 			return ctx.DIGIT().getText();
 		} else {
-		return ctx.DIGIT() + visit(ctx.number());
+			return ctx.DIGIT() + visit(ctx.number());
 		}
 	}
 
 	@Override
-	public String visitVariable(InterpreterParser.VariableContext ctx) {
-		if (ctx.UPPERCASE() == null) {
+	public String visitVariable(InterpreterParser.VariableContext ctx){
+		if (ctx.UPPERCASE() == null){
 			return ctx.LOWERCASE().getText();
 		} else {
 			return ctx.UPPERCASE().getText();
 		}
-
 	}
 
 	@Override
 	public String visitExpression(InterpreterParser.ExpressionContext ctx) {
-		if (ctx.expression() == null) {
-			return visitChildren(ctx);
+		if (ctx.variable() != null){
+			return visit(ctx.variable());
+		} else if (ctx.number() != null){
+			return visit(ctx.number());
+		} else if (ctx.SIN() != null){
+			return "sin(" + visit(ctx.expression(0)) + ")";
+		} else if (ctx.COS() != null){
+			return "cos(" + visit(ctx.expression(0)) + ")";
+		} else if (ctx.TAN() != null){
+			return "tan(" + visit(ctx.expression(0)) + ")";
+		} else if (ctx.COT() != null){
+			return "cot(" + visit(ctx.expression(0)) + ")";
+		} else if (ctx.SEC() != null){
+			return "sec(" + visit(ctx.expression(0)) + ")";
+		} else if (ctx.CSC() != null){
+			return "csc(" + visit(ctx.expression(0)) + ")";
+		} else if (ctx.POWER() != null){
+			return visit(ctx.expression(0)) + "^(" + visit(ctx.expression(1)) + ")";
+		} else if (ctx.MULTIPLY() != null){
+			return visit(ctx.expression(0)) + "*" + visit(ctx.expression(1));
+		} else if (ctx.DIVIDE() != null){
+			return visit(ctx.expression(0)) + "/" + visit(ctx.expression(1));
+		} else if (ctx.PLUS() != null){
+			return visit(ctx.expression(0)) + "+" + visit(ctx.expression(1));
+		} else if (ctx.MINUS() != null){
+			return visit(ctx.expression(0)) + "-" + visit(ctx.expression(1));
 		} else {
-			if (ctx.PLUS() == null) {
-				return visit(ctx.term()) + "-" + visit(ctx.expression());
-			} else {
-				return visit(ctx.term()) + "+" + visit(ctx.expression());
-			}
-		}
-	}
-
-	@Override
-	public String visitTerm(InterpreterParser.TermContext ctx) {
-		if (ctx.term() == null) {
-			return visitChildren(ctx);
-		} else {
-
-			if (ctx.MULTIPLY() == null) {
-				return visit(ctx.exponent()) + "/" + visit(ctx.term());
-			} else {
-				return visit(ctx.exponent()) + "*" + visit(ctx.term());
-			}
-		}
-	}
-
-	@Override
-	public String visitExponent(InterpreterParser.ExponentContext ctx) {
-		if (ctx.expression() == null) {
-			return visitChildren(ctx);
-		} else {
-			if (ctx.exponent() == null) {
-				if (ctx.SIN() != null) {
-					return "sin(" + visit(ctx.expression()) + ")";
-				} else if (ctx.COS() != null) {
-					return "cos(" + visit(ctx.expression()) + ")";
-				} else if (ctx.TAN() != null){
-					return "tan(" + visit(ctx.expression()) + ")";
-				} else if (ctx.COT() != null){
-					return "cot(" + visit(ctx.expression()) + ")";
-				} else if (ctx.SEC() != null){
-					return "sec(" + visit(ctx.expression()) + ")";
-				} else {
-					return "csc(" + visit(ctx.expression()) + ")";
-				}
-			} else {
-				return visit(ctx.exponent()) + "^(" + visit(ctx.expression())+ ")";
-			}
-		}
-	}
-
-	@Override
-	public String visitFactor(InterpreterParser.FactorContext ctx){
-		if (ctx.expression() == null){
-			return visitChildren(ctx);
-		} else {
-			return "(" + visit(ctx.expression()) + ")";
+			return "(" + visit(ctx.expression(0)) + ")";
 		}
 	}
 }

@@ -10,7 +10,7 @@ public class Main {
 
     @SuppressWarnings("Duplicates")
     public static void main(String[] args) {
-        String input = "(50)+10";
+        String input = "5*a+10";
         //InputStream inputStream = new ByteArrayInputStream(input.getBytes(Charset.forName("UTF-8")));
         try {
 

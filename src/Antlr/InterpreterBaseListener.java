@@ -1,4 +1,4 @@
-// Generated from D:/Joe/DevJava/ComputerAlgebraSystem/src\Interpreter.g4 by ANTLR 4.8
+// Generated from D:/Joe/DevJava/ComputerAlgebraSystem/src/UserInterface\Interpreter.g4 by ANTLR 4.8
 package Antlr;
 
 import org.antlr.v4.runtime.ParserRuleContext;
@@ -47,54 +47,6 @@ public class InterpreterBaseListener implements InterpreterListener {
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitVariable(InterpreterParser.VariableContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void enterIdentifier(InterpreterParser.IdentifierContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitIdentifier(InterpreterParser.IdentifierContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void enterFactor(InterpreterParser.FactorContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitFactor(InterpreterParser.FactorContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void enterExponent(InterpreterParser.ExponentContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitExponent(InterpreterParser.ExponentContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void enterTerm(InterpreterParser.TermContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitTerm(InterpreterParser.TermContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
