@@ -116,7 +116,6 @@ public class AbstractSyntaxNode {
 		return false;
 	}
 
-
 	@SuppressWarnings("Duplicates")
 	public void simplify() {
 		if (!isLeaf) {
@@ -149,7 +148,7 @@ public class AbstractSyntaxNode {
 
 	private void additionRules() {
 		//check redundancy rules first and if applied ignore other rules
-		if (!addSubRedundancy()) {
+		if (addSubRedundancy()) {
 			//evaluation
 			if (right.isNumber() && left.isNumber()) {
 				int newNo = Integer.parseInt(left.getData()) + Integer.parseInt(right.getData());
@@ -184,7 +183,7 @@ public class AbstractSyntaxNode {
 
 	private void subtractionRules() {
 		//check redundancy rules first and if applied ignore other rules
-		if (!addSubRedundancy()) {
+		if (addSubRedundancy()) {
 			//evaluation
 			if (right.isNumber() && left.isNumber()) {
 				int newNo = Integer.parseInt(left.getData()) - Integer.parseInt(right.getData());
@@ -204,7 +203,7 @@ public class AbstractSyntaxNode {
 					newNo = Integer.parseInt(left.getRight().getData()) + Integer.parseInt(right.getData());
 				}
 				if (newNo == 0) {
-					pullnode(left);
+					pullNode(left);
 				} else {
 					right.setData(Integer.toString(newNo));
 					left = left.getLeft();
@@ -216,10 +215,10 @@ public class AbstractSyntaxNode {
 	private void multiplicationRules(){
 		//redundancy rules
 		if (left.getData().equals("1")) {
-			pullnode(right);
+			pullNode(right);
 		}
 		else if (right.getData().equals("1")) {
-			pullnode(left);
+			pullNode(left);
 		}
 		//evaluation
 		else if (left.isNumber() && right.isNumber()) {
@@ -234,7 +233,7 @@ public class AbstractSyntaxNode {
 	private void divisionRules(){
 		//redundancy rule
 		if (right.data.equals("1")) {
-			pullnode(left);
+			pullNode(left);
 		}
 		//evaluation
 		else if (left.isNumber() && right.isNumber()) {
@@ -268,17 +267,17 @@ public class AbstractSyntaxNode {
 
 	private boolean addSubRedundancy() {
 		if (left.getData().equals("0")) {
-			pullnode(right);
-			return true;
+			pullNode(right);
+			return false;
 		}
 		if (right.getData().equals("0")) {
-			pullnode(left);
-			return true;
+			pullNode(left);
+			return false;
 		}
-		return false;
+		return true;
 	}
 
-	private void pullnode(AbstractSyntaxNode node){
+	private void pullNode(AbstractSyntaxNode node){
 		data = node.getData();
 		isLeaf = node.isLeaf();
 		isTrig = node.isTrig();

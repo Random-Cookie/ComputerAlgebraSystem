@@ -7,7 +7,6 @@
     <list default="true" id="2fb4a832-2bcb-4f46-83b3-c5675918cd12" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/UserInterface/AbstractSyntaxNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UserInterface/AbstractSyntaxNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UserInterface/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UserInterface/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,7 +23,7 @@
             <entry file="file://$PROJECT_DIR$/src/UserInterface/Main.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="374">
-                  <caret line="31" column="18" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
+                  <caret line="30" column="18" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -48,24 +47,23 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/UserInterface/AbstractSyntaxNode.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1806">
-                  <caret line="208" column="35" selection-start-line="208" selection-start-column="35" selection-end-line="208" selection-end-column="35" />
+                <state relative-caret-position="433">
+                  <caret line="267" column="20" selection-start-line="267" selection-start-column="20" selection-end-line="267" selection-end-column="20" />
                   <folding>
-                    <element signature="e#484#485#0" expanded="true" />
-                    <element signature="e#484#485#0" expanded="true" />
-                    <element signature="e#504#505#0" expanded="true" />
-                    <element signature="e#709#710#0" expanded="true" />
-                    <element signature="e#715#716#0" expanded="true" />
-                    <element signature="e#738#739#0" expanded="true" />
-                    <element signature="e#778#779#0" expanded="true" />
-                    <element signature="e#796#797#0" expanded="true" />
-                    <element signature="e#837#838#0" expanded="true" />
-                    <element signature="e#856#857#0" expanded="true" />
-                    <element signature="e#905#906#0" expanded="true" />
-                    <element signature="e#928#929#0" expanded="true" />
-                    <element signature="e#979#980#0" expanded="true" />
-                    <element signature="e#1004#1005#0" expanded="true" />
+                    <element signature="n#!!block;n#isLeaf#1;n#AbstractSyntaxNode#0" />
+                    <element signature="e#458#459#0" expanded="true" />
+                    <element signature="method#isNumber#0;class#AbstractSyntaxNode#0" />
+                    <element signature="n#!!block;n#getData#0;n#AbstractSyntaxNode#0" />
+                    <element signature="e#683#684#0" expanded="true" />
+                    <element signature="method#addNode#0;class#AbstractSyntaxNode#0" />
+                    <element signature="method#printExpression#0;class#AbstractSyntaxNode#0" />
+                    <element signature="method#equals#0;class#AbstractSyntaxNode#0" />
+                    <element signature="method#simplify#0;class#AbstractSyntaxNode#0" />
+                    <element signature="method#additionRules#0;class#AbstractSyntaxNode#0" />
                     <element signature="e#7395#7614#1" />
+                    <element signature="method#subtractionRules#0;class#AbstractSyntaxNode#0" />
+                    <element signature="method#multiplicationRules#0;class#AbstractSyntaxNode#0" />
+                    <element signature="method#divisionRules#0;class#AbstractSyntaxNode#0" />
                   </folding>
                 </state>
               </provider>
@@ -119,6 +117,7 @@
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
+        <option value="Random-Cookie &lt;sefi100@ntlworld.com&gt;" />
         <option value="Joe Cook" />
       </list>
     </option>
@@ -215,7 +214,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1586877753270" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1586878187229" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Antlr" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -308,7 +307,7 @@
       <workItem from="1585656374894" duration="21454000" />
       <workItem from="1585765125744" duration="1209000" />
       <workItem from="1586762105898" duration="13510000" />
-      <workItem from="1586866631928" duration="7238000" />
+      <workItem from="1586866631928" duration="7659000" />
     </task>
     <task id="LOCAL-00001" summary="Git Integration Test">
       <created>1582540873082</created>
@@ -345,11 +344,18 @@
       <option name="project" value="LOCAL" />
       <updated>1586869204300</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="-Added AbstractSyntaxNode.pullNode&#10;    -Pulls a node up to the current node&#10;    -i.e. replaces current node with the passed node&#10;-Split simplification rules inside AbstractSyntaxNode into separate methods for better separation">
+      <created>1586877982278</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1586877982278</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="79184000" />
+    <option name="totallyTimeSpent" value="79605000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -361,7 +367,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13113007" />
@@ -373,7 +379,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.35427952" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.35427952" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.29144096" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -406,7 +412,9 @@
     <MESSAGE value="Printing Expressions:&#10;-added visitor class to extract expressions from tree&#10;-added method to main to extract expressions using visitor&#10;-added tests for above&#10;-restructured packages" />
     <MESSAGE value="Grammar simplification:&#10;-grammar vastly simplified&#10;-visitor printer changed accordingly" />
     <MESSAGE value="-Added AbstractSyntaxNode.treeEquality to compare trees&#10;-Added AbstractSyntaxNode.printExpression to print expressions from ASTs&#10;-Added AbstractSyntaxNode.simplify&#10;    -Added redundancy conditions for +,-,*,/ operators&#10;    -Added evaluation operators for integers for +,-,*,/&#10;    -Added sin/cos = tan rule" />
-    <option name="LAST_COMMIT_MESSAGE" value="-Added AbstractSyntaxNode.treeEquality to compare trees&#10;-Added AbstractSyntaxNode.printExpression to print expressions from ASTs&#10;-Added AbstractSyntaxNode.simplify&#10;    -Added redundancy conditions for +,-,*,/ operators&#10;    -Added evaluation operators for integers for +,-,*,/&#10;    -Added sin/cos = tan rule" />
+    <MESSAGE value="-Added AbstractSyntaxNode.pullNode&#10;    -Pulls a node up to the current node&#10;    -i.e. replaces current node with the passed node&#10;-Split simplification rules inside AbstractSyntaxNode into separate methods for better separation" />
+    <option name="LAST_COMMIT_MESSAGE" value="-Added AbstractSyntaxNode.pullNode&#10;    -Pulls a node up to the current node&#10;    -i.e. replaces current node with the passed node&#10;-Split simplification rules inside AbstractSyntaxNode into separate methods for better separation" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -431,19 +439,19 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/UserInterface/Main.java</url>
-          <line>34</line>
+          <line>33</line>
           <properties />
           <option name="timeStamp" value="23" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/UserInterface/Main.java</url>
-          <line>20</line>
+          <line>19</line>
           <properties />
           <option name="timeStamp" value="39" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/UserInterface/AbstractSyntaxNode.java</url>
-          <line>109</line>
+          <line>107</line>
           <properties class="UserInterface.AbstractSyntaxNode" method="treeEquality">
             <option name="EMULATED" value="true" />
           </properties>
@@ -451,7 +459,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/UserInterface/AbstractSyntaxNode.java</url>
-          <line>217</line>
+          <line>214</line>
           <properties class="UserInterface.AbstractSyntaxNode" method="multiplicationRules">
             <option name="EMULATED" value="true" />
           </properties>
@@ -675,7 +683,7 @@
     <entry file="file://$PROJECT_DIR$/src/UserInterface/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
-          <caret line="31" column="18" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
+          <caret line="30" column="18" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -684,24 +692,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/UserInterface/AbstractSyntaxNode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1806">
-          <caret line="208" column="35" selection-start-line="208" selection-start-column="35" selection-end-line="208" selection-end-column="35" />
+        <state relative-caret-position="433">
+          <caret line="267" column="20" selection-start-line="267" selection-start-column="20" selection-end-line="267" selection-end-column="20" />
           <folding>
-            <element signature="e#484#485#0" expanded="true" />
-            <element signature="e#484#485#0" expanded="true" />
-            <element signature="e#504#505#0" expanded="true" />
-            <element signature="e#709#710#0" expanded="true" />
-            <element signature="e#715#716#0" expanded="true" />
-            <element signature="e#738#739#0" expanded="true" />
-            <element signature="e#778#779#0" expanded="true" />
-            <element signature="e#796#797#0" expanded="true" />
-            <element signature="e#837#838#0" expanded="true" />
-            <element signature="e#856#857#0" expanded="true" />
-            <element signature="e#905#906#0" expanded="true" />
-            <element signature="e#928#929#0" expanded="true" />
-            <element signature="e#979#980#0" expanded="true" />
-            <element signature="e#1004#1005#0" expanded="true" />
+            <element signature="n#!!block;n#isLeaf#1;n#AbstractSyntaxNode#0" />
+            <element signature="e#458#459#0" expanded="true" />
+            <element signature="method#isNumber#0;class#AbstractSyntaxNode#0" />
+            <element signature="n#!!block;n#getData#0;n#AbstractSyntaxNode#0" />
+            <element signature="e#683#684#0" expanded="true" />
+            <element signature="method#addNode#0;class#AbstractSyntaxNode#0" />
+            <element signature="method#printExpression#0;class#AbstractSyntaxNode#0" />
+            <element signature="method#equals#0;class#AbstractSyntaxNode#0" />
+            <element signature="method#simplify#0;class#AbstractSyntaxNode#0" />
+            <element signature="method#additionRules#0;class#AbstractSyntaxNode#0" />
             <element signature="e#7395#7614#1" />
+            <element signature="method#subtractionRules#0;class#AbstractSyntaxNode#0" />
+            <element signature="method#multiplicationRules#0;class#AbstractSyntaxNode#0" />
+            <element signature="method#divisionRules#0;class#AbstractSyntaxNode#0" />
           </folding>
         </state>
       </provider>
