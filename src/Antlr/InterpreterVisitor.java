@@ -11,12 +11,6 @@ import org.antlr.v4.runtime.tree.ParseTreeVisitor;
  */
 public interface InterpreterVisitor<T> extends ParseTreeVisitor<T> {
 	/**
-	 * Visit a parse tree produced by {@link InterpreterParser#start}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitStart(InterpreterParser.StartContext ctx);
-	/**
 	 * Visit a parse tree produced by {@link InterpreterParser#number}.
 	 * @param ctx the parse tree
 	 * @return the visitor result

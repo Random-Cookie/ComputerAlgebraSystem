@@ -16,18 +16,6 @@ public class InterpreterBaseListener implements InterpreterListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterStart(InterpreterParser.StartContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitStart(InterpreterParser.StartContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
 	@Override public void enterNumber(InterpreterParser.NumberContext ctx) { }
 	/**
 	 * {@inheritDoc}

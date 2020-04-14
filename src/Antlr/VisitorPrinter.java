@@ -3,11 +3,6 @@ package Antlr;
 public class VisitorPrinter extends InterpreterBaseVisitor<String> {
 
 	@Override
-	public String visitStart(InterpreterParser.StartContext ctx) {
-		return visit(ctx.expression());
-	}
-
-	@Override
 	public String visitNumber(InterpreterParser.NumberContext ctx) {
 		if (ctx.number() == null) {
 			return ctx.DIGIT().getText();

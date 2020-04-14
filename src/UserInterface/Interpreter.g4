@@ -1,8 +1,5 @@
 grammar Interpreter;
 
-start:
-    expression EOF;
-
 number:
 	|	DIGIT
 	|	DIGIT number;

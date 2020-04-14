@@ -62,7 +62,7 @@ public class PrintTest {
 			CommonTokenStream cts = new CommonTokenStream(il);
 			InterpreterParser ip = new InterpreterParser(cts);
 			System.out.println("	Expected:	" + input);
-			String result = Main.getExpressionFromTree(ip.start());
+			String result = Main.getExpressionFromTree(ip.expression());
 			System.out.println("	Result:		" + result);
 			if (result.equals(input)){
 				System.out.println(ANSI_GREEN + "	PASSED" + ANSI_RESET);
