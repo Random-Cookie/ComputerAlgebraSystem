@@ -1,10 +1,9 @@
 package UserInterface;
 
 import Antlr.*;
+import org.antlr.v4.runtime.CharStream;
 import org.antlr.v4.runtime.CharStreams;
 import org.antlr.v4.runtime.CommonTokenStream;
-
-import org.antlr.v4.runtime.*;
 import org.antlr.v4.runtime.tree.ParseTreeWalker;
 
 public class Main {
@@ -18,7 +17,18 @@ public class Main {
         test("1/3+3-6");
         test("1/3-6+3");
 
+        System.out.println("\nREDUNDANCY TESTS");
+        test("11+0");
+        test("0+11");
+        test("0-11");
+        test("11-0");
+        test("11*1");
+        test("1*11");
+        test("11/1");
+
         test("sin(90+5*x)/cos(90+5*x)");
+
+        test("10/5");
 
         System.out.println("DONE");
     }
@@ -41,6 +51,7 @@ public class Main {
 
             AST.simplify();
 
+            System.out.print("    ");
             AST.printExpression();
             System.out.print('\n');
 

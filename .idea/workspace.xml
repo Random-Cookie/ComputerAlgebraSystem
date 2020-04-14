@@ -4,21 +4,9 @@
     <bookmark url="file://$PROJECT_DIR$/src/UserInterface/Main.java" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2fb4a832-2bcb-4f46-83b3-c5675918cd12" name="Default Changelist" comment="-Added AbstractSyntaxNode.treeEquality to compare trees&#10;-Added AbstractSyntaxNode.printExpression to print expressions from ASTs&#10;-Added AbstractSyntaxNode.simplify&#10;    -Added redundancy conditions for +,-,*,/ operators&#10;    -Added evaluation operators for integers for +,-,*,/&#10;    -Added sin/cos = tan rule">
-      <change afterPath="$PROJECT_DIR$/src/Antlr/ListenerASTGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Testing/EqualityTesting.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UserInterface/AbstractSyntaxNode.java" afterDir="false" />
+    <list default="true" id="2fb4a832-2bcb-4f46-83b3-c5675918cd12" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Antlr/Interpreter.interp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Antlr/Interpreter.interp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Antlr/InterpreterBaseListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Antlr/InterpreterBaseListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Antlr/InterpreterBaseVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Antlr/InterpreterBaseVisitor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Antlr/InterpreterListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Antlr/InterpreterListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Antlr/InterpreterParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Antlr/InterpreterParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Antlr/InterpreterVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Antlr/InterpreterVisitor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Antlr/VisitorPrinter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Antlr/VisitorPrinter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Antlr/VisitorSimplifier.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Testing/PrintTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Testing/PrintTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UserInterface/Interpreter.g4" beforeDir="false" afterPath="$PROJECT_DIR$/src/UserInterface/Interpreter.g4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UserInterface/AbstractSyntaxNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UserInterface/AbstractSyntaxNode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/UserInterface/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UserInterface/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -35,8 +23,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/UserInterface/Main.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="340">
-                  <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+                <state relative-caret-position="374">
+                  <caret line="31" column="18" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -60,9 +48,13 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/UserInterface/AbstractSyntaxNode.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1024">
-                  <caret line="103" column="52" selection-start-line="103" selection-start-column="52" selection-end-line="103" selection-end-column="52" />
+                <state relative-caret-position="1806">
+                  <caret line="208" column="35" selection-start-line="208" selection-start-column="35" selection-end-line="208" selection-end-column="35" />
                   <folding>
+                    <element signature="e#484#485#0" expanded="true" />
+                    <element signature="e#484#485#0" expanded="true" />
+                    <element signature="e#504#505#0" expanded="true" />
+                    <element signature="e#709#710#0" expanded="true" />
                     <element signature="e#715#716#0" expanded="true" />
                     <element signature="e#738#739#0" expanded="true" />
                     <element signature="e#778#779#0" expanded="true" />
@@ -73,9 +65,7 @@
                     <element signature="e#928#929#0" expanded="true" />
                     <element signature="e#979#980#0" expanded="true" />
                     <element signature="e#1004#1005#0" expanded="true" />
-                    <element signature="e#2517#3890#1" />
-                    <element signature="e#3922#5300#1" />
-                    <element signature="e#5332#5911#1" />
+                    <element signature="e#7395#7614#1" />
                   </folding>
                 </state>
               </provider>
@@ -88,8 +78,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/Antlr/VisitorPrinter.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="884">
-                  <caret line="52" column="9" selection-start-line="24" selection-start-column="8" selection-end-line="52" selection-end-column="9" />
+                <state relative-caret-position="189">
+                  <caret line="24" column="13" lean-forward="true" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
                 </state>
               </provider>
             </entry>
@@ -97,8 +87,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/UserInterface/Interpreter.g4">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="85">
-                  <caret line="5" selection-start-line="5" selection-end-line="5" />
+                <state relative-caret-position="170">
+                  <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
                 </state>
               </provider>
             </entry>
@@ -156,8 +146,8 @@
         <option value="$PROJECT_DIR$/src/Antlr/VisotrExtractor.java" />
         <option value="$PROJECT_DIR$/src/Antlr/ListenerASTGenerator.java" />
         <option value="$PROJECT_DIR$/src/Testing/EqualityTesting.java" />
-        <option value="$PROJECT_DIR$/src/UserInterface/AbstractSyntaxNode.java" />
         <option value="$PROJECT_DIR$/src/UserInterface/Main.java" />
+        <option value="$PROJECT_DIR$/src/UserInterface/AbstractSyntaxNode.java" />
       </list>
     </option>
   </component>
@@ -225,7 +215,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1586869061615" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1586877753270" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Antlr" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -318,7 +308,7 @@
       <workItem from="1585656374894" duration="21454000" />
       <workItem from="1585765125744" duration="1209000" />
       <workItem from="1586762105898" duration="13510000" />
-      <workItem from="1586866631928" duration="2563000" />
+      <workItem from="1586866631928" duration="7238000" />
     </task>
     <task id="LOCAL-00001" summary="Git Integration Test">
       <created>1582540873082</created>
@@ -348,11 +338,18 @@
       <option name="project" value="LOCAL" />
       <updated>1585658839350</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="-Added AbstractSyntaxNode.treeEquality to compare trees&#10;-Added AbstractSyntaxNode.printExpression to print expressions from ASTs&#10;-Added AbstractSyntaxNode.simplify&#10;    -Added redundancy conditions for +,-,*,/ operators&#10;    -Added evaluation operators for integers for +,-,*,/&#10;    -Added sin/cos = tan rule">
+      <created>1586869204300</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1586869204300</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74509000" />
+    <option name="totallyTimeSpent" value="79184000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -364,7 +361,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13113007" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -375,7 +373,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.35427952" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.35427952" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.29144096" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -384,9 +382,9 @@
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Tool Output" order="9" weight="0.32936078" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Messages" order="11" visible="true" weight="0.32827735" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32827735" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
-      <window_info anchor="bottom" id="Version Control" order="13" />
+      <window_info anchor="bottom" id="Version Control" order="13" weight="0.08017335" />
       <window_info anchor="bottom" id="ANTLR Preview" order="14" weight="0.39219934" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -433,29 +431,31 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/UserInterface/Main.java</url>
-          <line>23</line>
+          <line>34</line>
           <properties />
           <option name="timeStamp" value="23" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/UserInterface/AbstractSyntaxNode.java</url>
-          <line>172</line>
+          <url>file://$PROJECT_DIR$/src/UserInterface/Main.java</url>
+          <line>20</line>
           <properties />
-          <option name="timeStamp" value="26" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/UserInterface/AbstractSyntaxNode.java</url>
-          <line>161</line>
-          <properties />
-          <option name="timeStamp" value="30" />
+          <option name="timeStamp" value="39" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/UserInterface/AbstractSyntaxNode.java</url>
-          <line>107</line>
-          <properties class="UserInterface.AbstractSyntaxNode" method="equals">
+          <line>109</line>
+          <properties class="UserInterface.AbstractSyntaxNode" method="treeEquality">
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/UserInterface/AbstractSyntaxNode.java</url>
+          <line>217</line>
+          <properties class="UserInterface.AbstractSyntaxNode" method="multiplicationRules">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="42" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -602,20 +602,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Antlr/VisitorPrinter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="884">
-          <caret line="52" column="9" selection-start-line="24" selection-start-column="8" selection-end-line="52" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/UserInterface/Interpreter.g4">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/lib/antlr-4.8-complete.jar!/org/antlr/v4/runtime/Recognizer.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="292">
@@ -661,6 +647,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Antlr/VisitorPrinter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="24" column="13" lean-forward="true" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UserInterface/Interpreter.g4">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Testing/EqualityTesting.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="514">
@@ -674,8 +674,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/UserInterface/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+        <state relative-caret-position="374">
+          <caret line="31" column="18" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -684,9 +684,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/UserInterface/AbstractSyntaxNode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1024">
-          <caret line="103" column="52" selection-start-line="103" selection-start-column="52" selection-end-line="103" selection-end-column="52" />
+        <state relative-caret-position="1806">
+          <caret line="208" column="35" selection-start-line="208" selection-start-column="35" selection-end-line="208" selection-end-column="35" />
           <folding>
+            <element signature="e#484#485#0" expanded="true" />
+            <element signature="e#484#485#0" expanded="true" />
+            <element signature="e#504#505#0" expanded="true" />
+            <element signature="e#709#710#0" expanded="true" />
             <element signature="e#715#716#0" expanded="true" />
             <element signature="e#738#739#0" expanded="true" />
             <element signature="e#778#779#0" expanded="true" />
@@ -697,9 +701,7 @@
             <element signature="e#928#929#0" expanded="true" />
             <element signature="e#979#980#0" expanded="true" />
             <element signature="e#1004#1005#0" expanded="true" />
-            <element signature="e#2517#3890#1" />
-            <element signature="e#3922#5300#1" />
-            <element signature="e#5332#5911#1" />
+            <element signature="e#7395#7614#1" />
           </folding>
         </state>
       </provider>
