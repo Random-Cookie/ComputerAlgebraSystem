@@ -1,27 +1,45 @@
 package UserInterface;
 
+import org.jetbrains.annotations.NotNull;
+
 public class AbstractSyntaxNode {
 	private String data;
 	private AbstractSyntaxNode parent;
 	private AbstractSyntaxNode left;
 	private AbstractSyntaxNode right;
 	private boolean isLeaf;
-	private boolean isTrig;
+	private boolean isUnary;
 
-	public AbstractSyntaxNode(String data, boolean isLeaf, boolean isTrig) {
+	public AbstractSyntaxNode(String data, boolean isLeaf, boolean isUnary) {
 		this.data = data;
 		this.isLeaf = isLeaf;
-		this.isTrig = isTrig;
+		this.isUnary = isUnary;
 		left = null;
 		right = null;
+	}
+
+	public AbstractSyntaxNode (String data, AbstractSyntaxNode left){
+		this.data = data;
+		this.isLeaf = false;
+		this.isUnary = true;
+		this.left = left;
+		this.right = null;
+	}
+	
+	public AbstractSyntaxNode (String data, AbstractSyntaxNode left, AbstractSyntaxNode right){
+		this.data = data;
+		this.isLeaf = false;
+		this.isUnary = false;
+		this.left = left;
+		this.right = right;
 	}
 
 	public boolean isLeaf() {
 		return isLeaf;
 	}
 
-	public boolean isTrig() {
-		return isTrig;
+	public boolean isUnary() {
+		return isUnary;
 	}
 
 	public boolean isNumber() {
@@ -31,6 +49,14 @@ public class AbstractSyntaxNode {
 		} catch (Exception e) {
 			return false;
 		}
+	}
+
+	public boolean isVariable() {
+		char[] chars = data.toCharArray();
+		if (chars.length > 1){
+			return false;
+		}
+		return Character.isAlphabetic(chars[0]);
 	}
 
 	public String getData() {
@@ -61,7 +87,7 @@ public class AbstractSyntaxNode {
 		if (data.equals("")) {
 			data = newNode.getData();
 			isLeaf = newNode.isLeaf();
-			isTrig = newNode.isTrig();
+			isUnary = newNode.isUnary();
 			return true;
 		}
 		if (currentNode.getLeft() == null && !currentNode.isLeaf()) {
@@ -73,15 +99,44 @@ public class AbstractSyntaxNode {
 				return true;
 			}
 		}
-		if (currentNode.getRight() == null && !(currentNode.isLeaf() || currentNode.isTrig())) {
+		if (currentNode.getRight() == null && !(currentNode.isLeaf() || currentNode.isUnary())) {
 			currentNode.setRight(newNode);
 			return true;
 		}
-		if (!(currentNode.isLeaf() || currentNode.isTrig())) {
+		if (!(currentNode.isLeaf() || currentNode.isUnary())) {
 			return addNode(currentNode.getRight(), newNode);
 		} else {
 			return false;
 		}
+	}
+
+	public String getExpression(){
+		StringBuilder stringBuilder = new StringBuilder();
+		stringBuilder = generateExpression(stringBuilder);
+		return stringBuilder.toString();
+	}
+
+	private StringBuilder generateExpression(StringBuilder sb){
+		if (this.data.equals("()")) {
+			sb.append("(");
+			sb = left.generateExpression(sb);
+			sb.append(")");
+		} else if (this.data.equals("sin")
+				|| this.data.equals("cos")
+				|| this.data.equals("tan")
+				|| this.data.equals("cot")
+				|| this.data.equals("sec")
+				|| this.data.equals("csc")) {
+			sb.append(data);
+			sb.append("(");
+			sb = left.generateExpression(sb);
+			sb.append(")");
+		} else {
+			if (this.left != null) sb = left.generateExpression(sb);
+			sb.append(data);
+			if (this.right != null) sb = right.generateExpression(sb);
+		}
+		return sb;
 	}
 
 	public void printExpression() {
@@ -140,6 +195,10 @@ public class AbstractSyntaxNode {
 						subtractionRules();
 						break;
 				}
+				//if it's a trig function
+				if (isUnary && !data.equals("()")){
+					trigRules();
+				}
 			} catch (NullPointerException e) {
 				System.out.println(e.getMessage());
 			}
@@ -152,11 +211,10 @@ public class AbstractSyntaxNode {
 			//evaluation
 			if (right.isNumber() && left.isNumber()) {
 				int newNo = Integer.parseInt(left.getData()) + Integer.parseInt(right.getData());
-				data = Integer.toString(newNo);
-				left = null;
-				right = null;
-				isLeaf = true;
-			} else if (right.isNumber() && (left.getData().equals("+") || left.getData().equals("-"))) {
+				this.set(Integer.toString(newNo), false, true, null, null);
+			}
+			//top down evaluation
+			else if (right.isNumber() && (left.getData().equals("+") || left.getData().equals("-"))) {
 				int newNo;
 				if (left.getData().equals("+")) {
 					newNo = Integer.parseInt(left.getRight().getData()) + Integer.parseInt(right.getData());
@@ -168,14 +226,31 @@ public class AbstractSyntaxNode {
 					}
 				}
 				if (newNo == 0) {
-					data = left.getLeft().getData();
-					isLeaf = left.getLeft().isLeaf();
-					isTrig = left.getLeft().isTrig();
-					right = left.getLeft().getRight();
-					left = left.getLeft().getLeft();
+					pullNode(left.getLeft());
 				} else {
 					right.setData(Integer.toString(newNo));
 					left = left.getLeft();
+				}
+			}
+			//variable addition
+			if (left.getData().equals("*") && left.getData().equals("*")){
+				if (left.getRight().getData().equals(right.getRight().getData())){
+					//simple case, two coefficients are numbers
+					if (left.getLeft().isNumber() && right.getLeft().isNumber()){
+						int newCoeff = Integer.parseInt(left.getLeft().getData())
+								+ Integer.parseInt(right.getLeft().getData());
+						this.set("*", false, false,
+								new AbstractSyntaxNode(Integer.toString(newCoeff), true, false),
+								new AbstractSyntaxNode(right.getRight().getData(), true, false));
+					}
+					//coefficients are not numbers
+					else {
+						AbstractSyntaxNode var = right.getRight();
+						AbstractSyntaxNode leftCoeff = left.getLeft();
+						AbstractSyntaxNode rightCoeff = right.getLeft();
+						AbstractSyntaxNode newCoeff = new AbstractSyntaxNode("+", leftCoeff, rightCoeff);
+						this.set("*", false, false, new AbstractSyntaxNode("()", newCoeff), var);
+					}
 				}
 			}
 		}
@@ -191,7 +266,9 @@ public class AbstractSyntaxNode {
 				left = null;
 				right = null;
 				isLeaf = true;
-			} else if (right.isNumber() && (left.getData().equals("+") || left.getData().equals("-"))) {
+			}
+			//top down evaluation
+			else if (right.isNumber() && (left.getData().equals("+") || left.getData().equals("-"))) {
 				int newNo;
 				if (left.getData().equals("+")) {
 					newNo = Integer.parseInt(left.getRight().getData()) - Integer.parseInt(right.getData());
@@ -203,7 +280,7 @@ public class AbstractSyntaxNode {
 					newNo = Integer.parseInt(left.getRight().getData()) + Integer.parseInt(right.getData());
 				}
 				if (newNo == 0) {
-					pullNode(left);
+					pullNode(left.getLeft());
 				} else {
 					right.setData(Integer.toString(newNo));
 					left = left.getLeft();
@@ -223,10 +300,11 @@ public class AbstractSyntaxNode {
 		//evaluation
 		else if (left.isNumber() && right.isNumber()) {
 			int newNo = Integer.parseInt(left.getData()) * Integer.parseInt(right.getData());
-			data = Integer.toString(newNo);
-			left = null;
-			right = null;
-			isLeaf = true;
+			this.set(Integer.toString(newNo), false, true, null, null);
+		}
+		//Variable reorder
+		else if (left.isVariable() && right.isNumber()){
+			swapLeftRight();
 		}
 	}
 
@@ -241,27 +319,68 @@ public class AbstractSyntaxNode {
 			//Otherwise leave as "fraction"
 			if (Integer.parseInt(left.getData()) % Integer.parseInt(right.getData()) == 0) {
 				int newNo = Integer.parseInt(left.getData()) / Integer.parseInt(right.getData());
-				data = Integer.toString(newNo);
-				left = null;
-				right = null;
-				isLeaf = true;
+				this.set(Integer.toString(newNo), false, true, null, null);
 			}
 		}
 		//Tan and cot rules rule
 		else if (left.getData().equals("sin")
 				&& right.getData().equals("cos")
 				&& treeEquality(left.getLeft(), right.getLeft())) {
-			data = "tan";
-			left = left.getLeft();
-			right = null;
-			isTrig = true;
+			this.set("tan", true, false, left.getLeft(), null);
 		} else if (left.getData().equals("cos")
 				&& right.getData().equals("sin")
 				&& treeEquality(left.getLeft(), right.getLeft())) {
-			data = "cot";
-			left = left.getLeft();
-			right = null;
-			isTrig = true;
+			this.set("cot", true, false, left.getLeft(), null);
+		}
+	}
+
+	private void trigRules(){
+		if (left.isNumber()) {
+			int operand = Integer.parseInt(left.getData());
+			//redundant cases of trig functions
+			switch (data) {
+				case "sin":
+					if (operand % 270 == 0) {
+						this.set("-1", false, true, null, null);
+					} else if ((operand % 180 == 0)) {
+						this.set("0", false, true, null, null);
+					} else if (operand % 90 == 0){
+						this.set("1", false, true, null, null);
+					}
+					break;
+				case "cos":
+					if (operand % 360 == 0){
+						this.set("1", false, true, null, null);
+					} else if (operand % 180 == 0) {
+						this.set("-1", false, true, null, null);
+					} else if (operand % 90 == 0){
+						this.set("0", false, true, null, null);
+					}
+					break;
+				case "tan":
+					if (operand % 180 == 0){
+						this.set("0", false, true, null, null);
+					}
+					break;
+				case "csc":
+					if (operand % 270 == 0){
+						this.set("-1", false, true, null, null);
+					} else if (operand % 90 == 0){
+						this.set("1", false, true, null, null);
+					}
+					break;
+				case "sec":
+					if (operand % 360 == 0){
+						this.set("1", false, true, null, null);
+					} else if (operand % 180 == 0){
+						this.set("-1", false, true, null, null);
+					}
+					break;
+				case "cot":
+					if ((operand % 90 == 0) && (operand % 180 != 0)){
+						this.set("0", false, true, null, null);
+					}
+			}
 		}
 	}
 
@@ -277,11 +396,25 @@ public class AbstractSyntaxNode {
 		return true;
 	}
 
-	private void pullNode(AbstractSyntaxNode node){
+	private void pullNode(@NotNull AbstractSyntaxNode node){
 		data = node.getData();
 		isLeaf = node.isLeaf();
-		isTrig = node.isTrig();
+		isUnary = node.isUnary();
 		left = node.getLeft();
 		right = node.getRight();
+	}
+
+	private void swapLeftRight(){
+		AbstractSyntaxNode temp = left;
+		left = right;
+		right = temp;
+	}
+
+	private void set(String data, boolean isUnary, boolean isLeaf, AbstractSyntaxNode left, AbstractSyntaxNode right){
+		this.data = data;
+		this.isUnary = isUnary;
+		this.isLeaf = isLeaf;
+		this.left = left;
+		this.right = right;
 	}
 }

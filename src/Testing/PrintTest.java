@@ -1,7 +1,8 @@
 package Testing;
 
-import UserInterface.Main;
-import Antlr.*;
+import Antlr.InterpreterLexer;
+import Antlr.InterpreterParser;
+import UserInterface.Tests;
 import org.antlr.v4.runtime.CharStream;
 import org.antlr.v4.runtime.CharStreams;
 import org.antlr.v4.runtime.CommonTokenStream;
@@ -62,7 +63,7 @@ public class PrintTest {
 			CommonTokenStream cts = new CommonTokenStream(il);
 			InterpreterParser ip = new InterpreterParser(cts);
 			System.out.println("	Expected:	" + input);
-			String result = Main.getExpressionFromTree(ip.expression());
+			String result = Tests.getExpressionFromTree(ip.expression());
 			System.out.println("	Result:		" + result);
 			if (result.equals(input)){
 				System.out.println(ANSI_GREEN + "	PASSED" + ANSI_RESET);

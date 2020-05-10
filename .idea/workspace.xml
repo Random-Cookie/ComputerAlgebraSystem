@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/UserInterface/Main.java" />
+    <bookmark url="file://$PROJECT_DIR$/src/UserInterface/Tests.java" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2fb4a832-2bcb-4f46-83b3-c5675918cd12" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/UserInterface/Tests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ComputerAlgebraSystem.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ComputerAlgebraSystem.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Testing/PrintTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Testing/PrintTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/UserInterface/AbstractSyntaxNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UserInterface/AbstractSyntaxNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UserInterface/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UserInterface/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,84 +20,62 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.55269605">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/UserInterface/Main.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="374">
-                  <caret line="30" column="18" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Testing/EqualityTesting.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="514">
-                  <caret line="37" column="36" lean-forward="true" selection-start-line="37" selection-start-column="36" selection-end-line="37" selection-end-column="36" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                    <element signature="e#370#401#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/UserInterface/AbstractSyntaxNode.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="433">
-                  <caret line="267" column="20" selection-start-line="267" selection-start-column="20" selection-end-line="267" selection-end-column="20" />
-                  <folding>
-                    <element signature="n#!!block;n#isLeaf#1;n#AbstractSyntaxNode#0" />
-                    <element signature="e#458#459#0" expanded="true" />
-                    <element signature="method#isNumber#0;class#AbstractSyntaxNode#0" />
-                    <element signature="n#!!block;n#getData#0;n#AbstractSyntaxNode#0" />
-                    <element signature="e#683#684#0" expanded="true" />
-                    <element signature="method#addNode#0;class#AbstractSyntaxNode#0" />
-                    <element signature="method#printExpression#0;class#AbstractSyntaxNode#0" />
-                    <element signature="method#equals#0;class#AbstractSyntaxNode#0" />
-                    <element signature="method#simplify#0;class#AbstractSyntaxNode#0" />
-                    <element signature="method#additionRules#0;class#AbstractSyntaxNode#0" />
-                    <element signature="e#7395#7614#1" />
-                    <element signature="method#subtractionRules#0;class#AbstractSyntaxNode#0" />
-                    <element signature="method#multiplicationRules#0;class#AbstractSyntaxNode#0" />
-                    <element signature="method#divisionRules#0;class#AbstractSyntaxNode#0" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Antlr/VisitorPrinter.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="189">
-                  <caret line="24" column="13" lean-forward="true" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/UserInterface/Interpreter.g4">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="170">
-                  <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/UserInterface/Tests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2125">
+              <caret line="125" column="5" lean-forward="true" selection-start-line="91" selection-start-column="4" selection-end-line="125" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/UserInterface/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="15" lean-forward="true" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
+              <folding>
+                <element signature="e#240#271#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/UserInterface/Interpreter.g4">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="22" column="45" selection-start-line="22" selection-start-column="45" selection-end-line="22" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/UserInterface/AbstractSyntaxNode.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="841">
+              <caret line="163" selection-start-line="163" selection-end-line="163" />
+              <folding>
+                <element signature="method#isNumber#0;class#AbstractSyntaxNode#0" />
+                <element signature="method#addNode#0;class#AbstractSyntaxNode#0" />
+                <element signature="method#subtractionRules#0;class#AbstractSyntaxNode#0" />
+                <element signature="method#multiplicationRules#0;class#AbstractSyntaxNode#0" />
+                <element signature="method#divisionRules#0;class#AbstractSyntaxNode#0" />
+                <element signature="method#trigRules#0;class#AbstractSyntaxNode#0" />
+                <element signature="method#addSubRedundancy#0;class#AbstractSyntaxNode#0" />
+                <element signature="method#pullNode#0;class#AbstractSyntaxNode#0" />
+                <element signature="method#swapLeftRight#0;class#AbstractSyntaxNode#0" />
+                <element signature="method#set#0;class#AbstractSyntaxNode#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -145,14 +127,15 @@
         <option value="$PROJECT_DIR$/src/Antlr/VisotrExtractor.java" />
         <option value="$PROJECT_DIR$/src/Antlr/ListenerASTGenerator.java" />
         <option value="$PROJECT_DIR$/src/Testing/EqualityTesting.java" />
-        <option value="$PROJECT_DIR$/src/UserInterface/Main.java" />
+        <option value="$PROJECT_DIR$/oldgrammar.g4" />
         <option value="$PROJECT_DIR$/src/UserInterface/AbstractSyntaxNode.java" />
+        <option value="$PROJECT_DIR$/src/UserInterface/Tests.java" />
+        <option value="$PROJECT_DIR$/src/UserInterface/Main.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="823" />
-    <option name="y" value="-18" />
+    <option name="x" value="-7" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
   </component>
@@ -164,8 +147,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -209,18 +190,24 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1586878187229" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1589103933888" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Antlr" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Other File Types" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -241,7 +228,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.Main (1)">
     <configuration name="EqualityTesting" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Testing.EqualityTesting" />
       <module name="ComputerAlgebraSystem" />
@@ -255,8 +242,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="UserInterface.Main" />
+      <module name="ComputerAlgebraSystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="UserInterface.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="UserInterface.Tests" />
       <module name="ComputerAlgebraSystem" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <RunnerSettings RunnerId="Run" />
@@ -280,6 +280,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.EqualityTesting" />
         <item itemvalue="Application.PrintTest" />
@@ -308,6 +309,18 @@
       <workItem from="1585765125744" duration="1209000" />
       <workItem from="1586762105898" duration="13510000" />
       <workItem from="1586866631928" duration="7659000" />
+      <workItem from="1586878211257" duration="176000" />
+      <workItem from="1586955744790" duration="10120000" />
+      <workItem from="1588509492617" duration="599000" />
+      <workItem from="1588521243188" duration="1196000" />
+      <workItem from="1588581642791" duration="3073000" />
+      <workItem from="1588610349569" duration="3247000" />
+      <workItem from="1588669456029" duration="3594000" />
+      <workItem from="1588757222423" duration="4081000" />
+      <workItem from="1588790879476" duration="1086000" />
+      <workItem from="1588843760835" duration="7779000" />
+      <workItem from="1589042243257" duration="1216000" />
+      <workItem from="1589101706456" duration="2781000" />
     </task>
     <task id="LOCAL-00001" summary="Git Integration Test">
       <created>1582540873082</created>
@@ -351,11 +364,18 @@
       <option name="project" value="LOCAL" />
       <updated>1586877982278</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="-Inverted addSubRedundancy method&#10;-renamed pullnode() to pullNode()">
+      <created>1586878380903</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1586878380903</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="79605000" />
+    <option name="totallyTimeSpent" value="118553000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -368,9 +388,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13113007" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.31619257" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -379,8 +398,41 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.35427952" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.29144096" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.219935" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.16901408" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32936078" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32936078" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Tool Output" order="9" weight="0.32936078" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32822758" />
+      <window_info anchor="bottom" id="Database Changes" order="12" />
+      <window_info anchor="bottom" id="Version Control" order="13" weight="0.08017335" />
+      <window_info anchor="bottom" id="ANTLR Preview" order="14" weight="0.39219934" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.31619257" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.22210184" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.16901408" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32936078" />
@@ -401,7 +453,7 @@
       <window_info anchor="right" id="Database" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
-    </layout>
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -413,7 +465,8 @@
     <MESSAGE value="Grammar simplification:&#10;-grammar vastly simplified&#10;-visitor printer changed accordingly" />
     <MESSAGE value="-Added AbstractSyntaxNode.treeEquality to compare trees&#10;-Added AbstractSyntaxNode.printExpression to print expressions from ASTs&#10;-Added AbstractSyntaxNode.simplify&#10;    -Added redundancy conditions for +,-,*,/ operators&#10;    -Added evaluation operators for integers for +,-,*,/&#10;    -Added sin/cos = tan rule" />
     <MESSAGE value="-Added AbstractSyntaxNode.pullNode&#10;    -Pulls a node up to the current node&#10;    -i.e. replaces current node with the passed node&#10;-Split simplification rules inside AbstractSyntaxNode into separate methods for better separation" />
-    <option name="LAST_COMMIT_MESSAGE" value="-Added AbstractSyntaxNode.pullNode&#10;    -Pulls a node up to the current node&#10;    -i.e. replaces current node with the passed node&#10;-Split simplification rules inside AbstractSyntaxNode into separate methods for better separation" />
+    <MESSAGE value="-Inverted addSubRedundancy method&#10;-renamed pullnode() to pullNode()" />
+    <option name="LAST_COMMIT_MESSAGE" value="-Inverted addSubRedundancy method&#10;-renamed pullnode() to pullNode()" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -438,32 +491,28 @@
           <option name="timeStamp" value="20" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/UserInterface/Main.java</url>
-          <line>33</line>
+          <url>file://$PROJECT_DIR$/src/UserInterface/Tests.java</url>
+          <line>88</line>
           <properties />
           <option name="timeStamp" value="23" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/UserInterface/Main.java</url>
-          <line>19</line>
+          <url>file://$PROJECT_DIR$/src/UserInterface/AbstractSyntaxNode.java</url>
+          <line>45</line>
           <properties />
-          <option name="timeStamp" value="39" />
+          <option name="timeStamp" value="43" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/UserInterface/AbstractSyntaxNode.java</url>
-          <line>107</line>
-          <properties class="UserInterface.AbstractSyntaxNode" method="treeEquality">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="35" />
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/UserInterface/Tests.java</url>
+          <line>83</line>
+          <properties />
+          <option name="timeStamp" value="45" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/UserInterface/AbstractSyntaxNode.java</url>
-          <line>214</line>
-          <properties class="UserInterface.AbstractSyntaxNode" method="multiplicationRules">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="42" />
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/UserInterface/Tests.java</url>
+          <line>110</line>
+          <properties />
+          <option name="timeStamp" value="46" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -490,13 +539,6 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Antlr/temp.java" />
-    <entry file="jar://$PROJECT_DIR$/lib/antlr-4.8-complete.jar!/org/antlr/v4/runtime/CharStreams.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="33" column="91" selection-start-line="33" selection-start-column="91" selection-end-line="33" selection-end-column="91" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Antlr/ListenerPrinter.java" />
     <entry file="jar://$PROJECT_DIR$/lib/antlr-4.8-complete.jar!/org/antlr/v4/runtime/tree/AbstractParseTreeVisitor.class">
       <provider selected="true" editor-type-id="text-editor">
@@ -520,9 +562,6 @@
           <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/oldgrammar.txt">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Antlr/VisitorSimplifier.java" />
     <entry file="file://$PROJECT_DIR$/src/UserInterface/AbstractSyntaxTree.java" />
@@ -645,70 +684,97 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Antlr/ListenerASTGenerator.java">
+    <entry file="file://$PROJECT_DIR$/src/Testing/EqualityTesting.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="510">
+          <caret line="37" column="36" selection-start-line="37" selection-start-column="36" selection-end-line="37" selection-end-column="36" />
           <folding>
-            <element signature="e#256#257#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Antlr/VisitorPrinter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="24" column="13" lean-forward="true" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+        <state relative-caret-position="408">
+          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oldgrammar.g4">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Antlr/ListenerASTGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="21" column="37" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
+          <folding>
+            <element signature="e#239#240#0" expanded="true" />
+            <element signature="e#256#257#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/antlr-4.8-complete.jar!/org/antlr/v4/runtime/CodePointBuffer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="125" selection-start-line="125" selection-end-line="125" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/antlr-4.8-complete.jar!/org/antlr/v4/runtime/CharStreams.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="142" selection-start-line="142" selection-end-line="142" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/UserInterface/Interpreter.g4">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+        <state relative-caret-position="374">
+          <caret line="22" column="45" selection-start-line="22" selection-start-column="45" selection-end-line="22" selection-end-column="45" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Testing/EqualityTesting.java">
+    <entry file="file://$PROJECT_DIR$/src/UserInterface/AbstractSyntaxNode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="514">
-          <caret line="37" column="36" lean-forward="true" selection-start-line="37" selection-start-column="36" selection-end-line="37" selection-end-column="36" />
+        <state relative-caret-position="841">
+          <caret line="163" selection-start-line="163" selection-end-line="163" />
+          <folding>
+            <element signature="method#isNumber#0;class#AbstractSyntaxNode#0" />
+            <element signature="method#addNode#0;class#AbstractSyntaxNode#0" />
+            <element signature="method#subtractionRules#0;class#AbstractSyntaxNode#0" />
+            <element signature="method#multiplicationRules#0;class#AbstractSyntaxNode#0" />
+            <element signature="method#divisionRules#0;class#AbstractSyntaxNode#0" />
+            <element signature="method#trigRules#0;class#AbstractSyntaxNode#0" />
+            <element signature="method#addSubRedundancy#0;class#AbstractSyntaxNode#0" />
+            <element signature="method#pullNode#0;class#AbstractSyntaxNode#0" />
+            <element signature="method#swapLeftRight#0;class#AbstractSyntaxNode#0" />
+            <element signature="method#set#0;class#AbstractSyntaxNode#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UserInterface/Tests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2125">
+          <caret line="125" column="5" lean-forward="true" selection-start-line="91" selection-start-column="4" selection-end-line="125" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#370#401#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/UserInterface/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="30" column="18" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
+        <state relative-caret-position="34">
+          <caret line="2" column="15" lean-forward="true" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
           <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/UserInterface/AbstractSyntaxNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="433">
-          <caret line="267" column="20" selection-start-line="267" selection-start-column="20" selection-end-line="267" selection-end-column="20" />
-          <folding>
-            <element signature="n#!!block;n#isLeaf#1;n#AbstractSyntaxNode#0" />
-            <element signature="e#458#459#0" expanded="true" />
-            <element signature="method#isNumber#0;class#AbstractSyntaxNode#0" />
-            <element signature="n#!!block;n#getData#0;n#AbstractSyntaxNode#0" />
-            <element signature="e#683#684#0" expanded="true" />
-            <element signature="method#addNode#0;class#AbstractSyntaxNode#0" />
-            <element signature="method#printExpression#0;class#AbstractSyntaxNode#0" />
-            <element signature="method#equals#0;class#AbstractSyntaxNode#0" />
-            <element signature="method#simplify#0;class#AbstractSyntaxNode#0" />
-            <element signature="method#additionRules#0;class#AbstractSyntaxNode#0" />
-            <element signature="e#7395#7614#1" />
-            <element signature="method#subtractionRules#0;class#AbstractSyntaxNode#0" />
-            <element signature="method#multiplicationRules#0;class#AbstractSyntaxNode#0" />
-            <element signature="method#divisionRules#0;class#AbstractSyntaxNode#0" />
+            <element signature="e#240#271#0" expanded="true" />
           </folding>
         </state>
       </provider>
